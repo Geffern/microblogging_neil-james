@@ -1,4 +1,10 @@
 require 'sinatra'
+require 'sinatra/activerecord'
+require 'sqlite3'
+
+set :database, {adapter: 'sqlite3', database: 'db/microblog.db'}
+require './models'
+
 
 before do 
 	@class_name="default"
