@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<link rel="stylesheet" type="text/css" href="css/<%= @class_name %>.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Oswald|Playfair+Display" rel="stylesheet">
+</head>
+<body class="<%= @class_name %>">
+  <div class="navbar">
+    <a href="/">CUTSCENE</a>
+    <a href="/sign_in">Sign In</a>
+    <a href="">Download</a>
+    <!-- <a href=""> <i class="fa fa-instagram fa-4" aria-hidden="true"></i> </a> -->
+  </div>
+ 
+
+
+ <%= yield %>
+
+
+
+</body>
+</html>

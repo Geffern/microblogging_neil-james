@@ -1,0 +1,65 @@
+.navbar {
+    overflow: hidden;
+    background-color: #688dc9;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    left: 0;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    bottom: 0%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "norwester";
+    font-size: 15px;
+}
+body {
+	margin-left: 190px;
+	margin-right: 190px;
+	background-color: #688dc9;
+}
+@font-face { 
+    font-family: "norwester";
+    src: url('norwester.ttf'); 
+}
+h1 {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 70px;
+	padding-top: 40px;
+}
+input {
+	font-size: 40px;
+	font-weight: bold;	
+	margin-left: 145px;
+}
+form {
+	font-size: 18px;
+	margin-left: 70px;
+	padding-top: 15px;
+}
+.cut {
+	color: #ffffff;
+	font-family: "norwester";
+	font-size: 85px;
+	display: block;
+	margin-top: 25px;
+}.cutbox {
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+.formtext {
+	font-family: 'Oswald', sans-serif;
+	color: #ffffff;
+	text-align: left;
+	position: relative;
+	margin-bottom: 1px;
+	padding-left: 150px;
+	padding-bottom: 1px;
+}
