@@ -1,3 +1,83 @@
+html body {
+	background-color: #fffef9
+}
+body{
+	/*padding: 50px;*/
+	margin-left: 190px;
+	margin-right: 190px; 
+	
+	
+}
 h1 {
-	font-size: 12px;
+	font-size: 66px;
+	font-family: 'Playfair Display', serif;
+	color: #bab151;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+	
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+}
+.formbox {
+	/*background-color: #a8abaf;*/
+	width: 350px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 60px;
+	display: inline-block;
+	float: left;
+	background-color: white
+}
+
+.formbox input {
+	font-family: 'Inconsolata', monospace;
+	font-size: 15px;
+
+} 
+p.formsause{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	margin: 0 auto;
+
+}
+p.formsause_1{
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	
+}
+.discription{
+	-ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);
+    text-align: center;
+    width: 350px;
+    float: right;
+   
+}
+.discription p{
+	font-family: 'Oswald', sans-serif;
+	font-size: 15px;
+}
+.navbar {
+    overflow: hidden;
+    background-color: black;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    left: 0;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
 }
