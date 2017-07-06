@@ -64,6 +64,11 @@ get '/profile' do
  	erb :profile
 end
 
+get '/user/:id' do
+	@user = User.find(params[:id])
+	erb :user
+end
+
 get '/post/:id' do
 	@post = Post.find(params[:id])
 erb :post
@@ -77,8 +82,27 @@ post '/profile' do
 	else
 		flash[:message]= "Looks like you gave us the wrong password. Hack denyied!!"
 end
-redirect 
+redirect '/profile'
 end
+
+post '/user' do
+	@user = User.new( uname: params[:uname],
+		email: params[:email], password: params[:password] )
+	if @user.save
+		flash[:message] = "Thanks for joining!"
+		session[:user_id]=@user.id
+		redirect '/profile'
+		else
+			flash[:message] = "Sorry! Something Bad Happened."
+			redirect '/'
+		end
+end
+
+get '/sign_out' do
+    session[:user_id] = nil
+    redirect '/'
+end
+
 # get '/about' do
 # 	@class_name="about"	
 # 	erb :about

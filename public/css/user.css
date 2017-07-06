@@ -1,0 +1,39 @@
+.navbar {
+    overflow: hidden;
+    background-color: #688dc9;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    left: 0;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    bottom: 0%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "norwester";
+    font-size: 15px;
+}
+body {
+	margin-left: 190px;
+	margin-right: 190px;
+	background-color: #688dc9;
+}
+@font-face { 
+    font-family: "norwester";
+    src: url('norwester.ttf'); 
+}
+h1 {
+	text-align: center;
+	font-family: 'Playfair Display', serif;
+	font-size: 70px;
+	padding-top: 40px;
+}
+.post{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
