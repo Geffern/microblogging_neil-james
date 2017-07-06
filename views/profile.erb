@@ -2,20 +2,25 @@
 <div class="form">
 <form method="post">
 <table>
-		<td>Email</td>
+		<td class="text3">Email</td>
 		<td><input name="email" disabled="true" value="<%= @current_user.email %>"></td>
 	</tr>
 	<tr>
-		<td>Username</td>
+		<td class="text3">Username</td>
 		<td><input name="uname" value="<%= @current_user.uname %>"></td>
 	</tr>
 	<tr>
-		<td>Current Password</td>
+		<td class="text3">Current Password</td>
 		<td><input type="password" name="password"> </td>
 	</tr>
 	<tr>
-		<td colspan="2"><input type="submit" value="Update Profile">
+		<td colspan="2"><input type="submit" value="Update Profile"></td>
 	</tr>
+	<tr>
+		<td colspan="2"><a href="/deleteAccount"><button>Delete System 32</button></a></td>
+	</tr>
+
+
 </table>
 </form>
 </div>

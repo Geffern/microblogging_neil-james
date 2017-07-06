@@ -65,11 +65,13 @@ get '/profile' do
 end
 
 get '/user/:id' do
+	@class_name="user"
 	@user = User.find(params[:id])
 	erb :user
 end
 
 get '/post/:id' do
+	@class_name="post"
 	@post = Post.find(params[:id])
 erb :post
 	end
@@ -101,6 +103,14 @@ end
 get '/sign_out' do
     session[:user_id] = nil
     redirect '/'
+end
+
+get '/deleteAccount' do
+@current_user.posts.destroy_all
+@current_user.destroy
+
+session[:user_id] = nil
+redirect '/'
 end
 
 # get '/about' do
