@@ -1,11 +1,10 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'sqlite3'
-
+require 'sinatra/flash'
 set :database, {adapter: 'sqlite3', database: 'db/microblog.db'}
+enable :sessions
 require './models'
-
-
 before do 
 	@class_name="default"
 end
@@ -21,6 +20,38 @@ get '/sign_in' do
  	erb :sign_in
 end
 
+post '/sign_in' do
+	@user = User.find_by(email: params[:email])
+	if @user && @user.password == params[:password]
+		session[:user_id] = @user.id
+		flash[:message] = "Welcome to our site, #{@user.uname}"
+		redirect '/profile'
+	else
+		flash[:message]="We don't recognize that information. Sorry!"
+	end
+end
+
+
+before do
+	@current_user = session[:user_id] ? User.find(session[:user_id]) : nil
+	# @current_user = User.find(session[:user_id])
+end
+
+get '/profile' do
+ erb :profile
+end
+
+
+post '/profile' do
+	if @current_user.password == params[:password]
+		User.update(
+			uname: params[:uname]
+			)
+		flash[:message] = "Never too late too late to reinvent yourself!"
+	else
+		flash[:message]= "Looks like you gave us the wrong password. Hack denyied!!"
+end
+end
 # get '/about' do
 # 	@class_name="about"	
 # 	erb :about
