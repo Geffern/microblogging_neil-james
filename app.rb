@@ -37,11 +37,37 @@ before do
 	# @current_user = User.find(session[:user_id])
 end
 
-get '/profile' do
- erb :profile
+before ['/author', '/profile'] do 
+	redirect '/' unless @current_user
 end
 
+get '/author' do
+	@class_name="author"
+	erb :author
+	end
 
+post '/author' do
+	@post = Post.new( title: params[:title],
+		body: params[:body],
+		user_id: @current_user.id)
+	if @post.save
+		flash[:message] = "Got your post! Nice Work!"
+		redirect '/profile'
+		else
+			flash[:message] = "Unable to save your post"
+			redirect '/author'
+		end
+end
+
+get '/profile' do
+	@class_name="profile"
+ 	erb :profile
+end
+
+get '/post/:id' do
+	@post = Post.find(params[:id])
+erb :post
+	end
 post '/profile' do
 	if @current_user.password == params[:password]
 		User.update(
@@ -51,6 +77,7 @@ post '/profile' do
 	else
 		flash[:message]= "Looks like you gave us the wrong password. Hack denyied!!"
 end
+redirect 
 end
 # get '/about' do
 # 	@class_name="about"	
