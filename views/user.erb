@@ -1,0 +1,6 @@
+<h1><%= @user.uname %>'s Posts</h1>
+<ol>
+	<% @user.posts.each do |post| %>
+		<li><a href="/post/<%= post.id %>"><%= post.title %></a></li>
+	<% end %>s	
+</ol>
