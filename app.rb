@@ -82,7 +82,7 @@ post '/profile' do
 			)
 		flash[:message] = "Never too late too late to reinvent yourself!"
 	else
-		flash[:message]= "Looks like you gave us the wrong password. Hack denyied!!"
+		flash[:message]= "Looks like you gave us the wrong password. Hack denied!!"
 end
 redirect '/profile'
 end
