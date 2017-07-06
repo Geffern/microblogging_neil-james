@@ -1,0 +1,54 @@
+@font-face { 
+    font-family: "norwester";
+    src: url('norwester.ttf'); 
+}
+.navbar {
+    overflow: hidden;
+    background-color: #688dc9;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 10;
+    left: 0;
+}
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    bottom: 0%;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "norwester";
+    font-size: 15px;
+}
+body {
+	margin-left: 190px;
+	margin-right: 190px;
+	background-color: #688dc9;
+}
+h1{
+    font-size: 66px;
+    font-family: "norwester";
+    color: white;
+}
+.form {
+    /*background-color: #a8abaf;*/
+    z-index: 9;
+    width: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 60px;
+    display: inline-block;
+    margin: 0 auto;
+    background-color: white;
+}
+.form:hover {
+    -moz-transform: scale(1.01);
+    -webkit-transform: scale(1.01);
+    transform: scale(1.01);
+}
+.form input {
+    font-family: 'Inconsolata', monospace;
+    font-size: 15px;
+    color: #688dc9;
+} 
