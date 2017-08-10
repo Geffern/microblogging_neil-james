@@ -15,6 +15,12 @@ get '/' do
 	erb :home
 end
 
+get '/users' do
+@class_name="users"
+erb :users
+end
+
+
 get '/sign_in' do
  	@class_name="sign_in"	
  	erb :sign_in
@@ -52,7 +58,7 @@ post '/author' do
 		user_id: @current_user.id)
 	if @post.save
 		flash[:message] = "Got your post! Nice Work!"
-		redirect '/profile'
+		redirect '/user/'+@current_user.id.to_s
 		else
 			flash[:message] = "Unable to save your post"
 			redirect '/author'
@@ -112,6 +118,7 @@ get '/deleteAccount' do
 session[:user_id] = nil
 redirect '/'
 end
+
 
 # get '/about' do
 # 	@class_name="about"	

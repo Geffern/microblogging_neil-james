@@ -8,14 +8,15 @@
 </head>
 <body class="<%= @class_name %>">
   <div class="navbar">
-    <a href="/">CUTSCENE</a>
-    <a href="/sign_in">Sign In</a>
-    <a href="/profile">Settings</a>
-    <a href="/author">Tell Your Story</a>
+    <a class="navlinks" href="/">CUTSCENE</a>
+    <a class="navlinks" href="/sign_in">Sign In</a>
+    <a class="navlinks" href="/profile">Settings</a>
+    <a class="navlinks" href="/author">Tell Your Story</a>
+    <a class="navlinks" href="/users">Users</a>
     <% if @current_user %>
-    <a href="/user/<%= @current_user.id %>">Your Posts</a>
+    <a class="navlinks" href="/user/<%= @current_user.id %>">Your Posts</a>
     <% end %>
-    <a href="/sign_out" style="float: right;">Sign Out</a>
+    <a class="navlinks" href="/sign_out" style="float: right;">Sign Out</a>
 
     <!-- <a href=""> <i class="fa fa-instagram fa-4" aria-hidden="true"></i> </a> -->
   </div>

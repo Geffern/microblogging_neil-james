@@ -22,57 +22,15 @@ h1 {
     transform: rotate(-7deg);
 	
 }
-h2 {
-	font-family: 'Oswald', sans-serif;
-	-ms-transform: rotate(-7deg); /* IE 9 */
-    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
-    transform: rotate(-7deg);
-    color: white;
-}
-.formbox {
-	/*background-color: #a8abaf;*/
-	z-index: 9;
-	width: 350px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	padding: 60px;
-	display: inline-block;
-	float: left;
-	background-color: white
-}
-.formbox:hover {
-	-moz-transform: scale(1.01);
-    -webkit-transform: scale(1.01);
-    transform: scale(1.01);
-}
-.formbox input {
-	font-family: 'Inconsolata', monospace;
-	font-size: 15px;
-	color: #688dc9;
-
-
-} 
-p.formsause{
-	font-family: 'Oswald', sans-serif;
+#five {
 	font-size: 30px;
-	margin: 0 auto;
-	color: #688dc9;
-
-
+	font-family: "norwester";
+	color: white;
 }
-p.formsause_1{
-	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
-	color: #688dc9;
-}
-.discription{
-    text-align: center;
-    width: 350px;
-    float: right;
-   color: white;
-}
-.discription p{
-	font-family: 'Oswald', sans-serif;
+.tres {
 	font-size: 15px;
+	font-family: "norwester";
+	color: white;
 }
 .navbar {
     overflow: hidden;
@@ -94,29 +52,6 @@ p.formsause_1{
     font-family: "norwester";
     font-size: 15px;
 }
-.bottomtext {
-	/*float: bottom;*/
-}
-
-
-.floating{
-	position: absolute;
-	opacity: .5;
-	size: 100px;
-    float: left;
-    -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 3s;
-    -webkit-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: ease-in-out;
-    -moz-animation-name: Floating;
-    -moz-animation-duration: 3s;
-    -moz-animation-iteration-count: infinite;
-    -moz-animation-timing-function: ease-in-out;
-    margin-left: 30px;
-    margin-top: 5px;
-
-}
-
 @-webkit-keyframes Floatingx{
     from {-webkit-transform:translate(0, 0px);}
     65% {-webkit-transform:translate(0, 15px);}
@@ -153,9 +88,3 @@ p.formsause_1{
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}    
     }
-.navlinks:hover {
-    color: yellow;
-}
-
-
-

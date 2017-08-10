@@ -2,6 +2,7 @@
 <div class="form">
 <form method="post">
 <table>
+	<tr>
 		<td class="text3">Email</td>
 		<td><input name="email" disabled="true" value="<%= @current_user.email %>"></td>
 	</tr>
@@ -17,10 +18,15 @@
 		<td colspan="2"><input type="submit" value="Update Profile"></td>
 	</tr>
 	<tr>
-		<td colspan="2"><a href="/deleteAccount"><button>Delete System 32</button></a></td>
+		<td><div></div></td>
 	</tr>
-
-
 </table>
+<div>
+	<a href="/deleteAccount">
+	Delete System 32
+	<!-- <button>Delete System 32</button> -->
+	</a>
+</div>
+
 </form>
 </div>
