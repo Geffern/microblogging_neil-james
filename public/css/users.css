@@ -22,6 +22,19 @@ h1 {
     transform: rotate(-7deg);
 	
 }
+.a_users {
+    font-size: 66px;
+    font-family: "norwester";
+    color: white;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+    transform: rotate(-7deg);  
+}
+li.list_users { 
+    font-size: 20px;
+    font-family: "norwester";
+    
+ }
 #five {
 	font-size: 30px;
 	font-family: "norwester";
@@ -88,3 +101,6 @@ h1 {
         65% {-moz-transform: scale(1.0);}
         to {-moz-transform: scale(0.9);}    
     }
+    .navlinks:hover {
+    color: yellow;
+}

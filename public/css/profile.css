@@ -60,3 +60,6 @@ button {
     font-family: 'Oswald', sans-serif;
     color: #688dc9;
 }
+.navlinks:hover {
+    color: yellow;
+}

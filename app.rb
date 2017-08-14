@@ -17,6 +17,7 @@ end
 
 get '/users' do
 @class_name="users"
+@users=User.all 
 erb :users
 end
 

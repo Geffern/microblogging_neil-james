@@ -58,6 +58,9 @@ p.formsause{
     font-size: 15px;
     color: #688dc9;
 } 
+.navlinks:hover {
+    color: yellow;
+}
 
 
 

@@ -63,3 +63,6 @@ form {
 	padding-left: 150px;
 	padding-bottom: 1px;
 }
+.navlinks:hover {
+    color: yellow;
+}
